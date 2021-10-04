@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('S:/HTML/Backgrounds/bg.jpg'), rgba(0, 0, 0,.3);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /*horizontal allignment*/
+    align-items: center; /*vertical allignment*/
+} 
+.box
+{
+    width: 300px;
+    height: fit-content;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    padding: 30px 35px;
+    flex-direction: column;
+    box-shadow: 0 25px 50px -20px rgba(0, 0, 0, 0.685);
+}
+.box h1
+{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 30px;
+    font-style: ;
+}
+input[type="text"] , input[type="password"]{
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border-color: rgba(109, 109, 109, 0.158);
+}
+label[for="username"],label[for="password"]{
+    color: rgba(146, 146, 146, 0.685);
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input[type="text"]:focus,input[type="password"]:focus{
+    outline: 0px;
+}
+
+.box a{
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: rgb(126, 70, 255);
+}
+
+.footer{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    color: rgba(146, 146, 146, 0.685);
+}
+input[type = "button"]{
+    outline: none;
+    border: none;
+    background-color: rgb(126, 70, 255);
+    color: #fff;
+    font-size: 11px;
+    padding: 8px 16px;
+    border-radius: 3px;
+   
+    box-shadow: inset .5px .5px 5px .5px rgb(97, 55, 248);
+}
+input[type = "button"]:hover{
+    transform: scale(1.1);
+    transition: all .3s ease;
+    background-color: blueviolet;
+}
